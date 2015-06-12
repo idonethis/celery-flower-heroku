@@ -1,1 +1,1 @@
-web: flower --port=$PORT --broker=$BROKER_URL --broker_api=$BROKER_API --db=$DATABASE_URL --persistent=true --basic_auth=$FLOWER_BASIC_AUTH
+web: flower --port=$PORT --broker=$BROKER_URL --broker_api=$BROKER_API --persistent=true --auth=".*@idonethis.com" --oauth2_key=$F_OAUTH2_KEY --oauth2_redirect_uri=$F_OAUTH2_REDIRECT_URI --oauth2_secret=$F_OAUTH2_SECRET
